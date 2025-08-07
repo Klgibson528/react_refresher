@@ -1,12 +1,13 @@
-import reactImg from '../assets/react-core-concepts.png';
+import reactImg from '../../assets/react-core-concepts.png';
+import "./Header.css";
 
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core', 'Essential', 'Basic', 'Important'];
 
-export default function getRandomDescription() {
+export function getRandomDescription() {
   const randomIndex = Math.floor(Math.random() * reactDescriptions.length);
   return reactDescriptions[randomIndex];
 }
-function Header(){
+export default function Header(){
   const description = getRandomDescription();
   return (
     <header>
